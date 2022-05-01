@@ -45,7 +45,7 @@ passage_end_tag:
   text: '全文完'
 
 comment:
-  use: 
+  use: 'utteranc'
   gitalk:
     clientID: 
     clientSecret: 
