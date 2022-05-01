@@ -1,0 +1,82 @@
+# 主题设置
+use_cdn: true # 是否使用 CDN 加速（cdn.jsdelivr.net）
+
+# 主题颜色
+color:
+  primary: indigo
+  accent: pink
+
+gdpr_cookie_alert:
+  enable: false
+  text: 此网站使用Cookie来改善您的体验。
+
+header_picture_link: https://lishanweilai-1254333161.cos.ap-beijing.myqcloud.com/necry/header.webp
+favicon: https://lishanweilai-1254333161.cos.ap-beijing.myqcloud.com/necry/hua.webp
+excerpt_length: 250 #自动生成的摘要长度 建议文章中手动使用 <!--more--> 效果更佳  
+tag_page_count: true #Tag页是否计数
+
+# 搜索(还没做)
+search:
+  local: true
+  path: /search.xml
+
+# 抽屉菜单的关于
+drawer_about:
+  enable: true
+  avatar: https://lishanweilai-1254333161.cos.ap-beijing.myqcloud.com/necry/hua.webp
+  name: AyaneYe
+  slogan: Life blooms like a flower
+  background: https://lishanweilai-1254333161.cos.ap-beijing.myqcloud.com/necry/sidebar.webp
+  is_dark: true
+
+# 抽屉菜单
+# 格式: 名称: 链接 || 前缀(图标)
+# 图标到找 https://www.mdui.org/docs/material_icon
+drawer:
+  主页: / || &#xe88a;
+  GitHub: https://github.com/AyaneYe || &#xe149;
+  小破站: https://space.bilibili.com/6809647 || &#xe04b;
+  赞助商们: /friends || &#xe7fb;
+  关于: /about || &#xe88e;
+
+# 文章末尾插入的文段，%title%表示文章标题，%link%表示文章链接
+passage_end_tag:
+  enabled: true
+  text: '全文完'
+
+comment:
+  use: 
+  gitalk:
+    clientID: 80eaa6ce1caacbbd32ad
+    clientSecret: ff1a4853b17d854bfaebbdccb887e14d87215053
+    repo: FW-Blog
+    owner: AyaneYe
+    admin: ['AyaneYe']
+    distractionFreeMode: true
+  utteranc:
+    repo: 
+    issue_term: 
+    lable: 
+    theme: 
+
+
+analytics:
+  google:
+    enabled: false
+    tracking_id: 
+  cloudflare:
+    enabled: false
+    token: 
+
+footer:
+  since: 2021
+  copyrights: true
+  hexo: false
+  theme: true
+  text: 
+  contact:
+    GitHub: https://github.com/AyaneYe
+    Email: mailto:charlottestar@qq.com
+    Twitter: https://twitter.com/AyaneYeee
+  miit_icp: 
+  moe_icp: 20211981
