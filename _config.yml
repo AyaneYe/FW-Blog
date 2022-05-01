@@ -139,4 +139,4 @@ theme: mdx
 deploy:
   type: git
   repo: git@github.com:AyaneYe/FW-Blog.git
-  branch: master
+  branch: gh-pages
