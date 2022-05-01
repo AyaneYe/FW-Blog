@@ -47,17 +47,17 @@ passage_end_tag:
 comment:
   use: 
   gitalk:
-    clientID: 80eaa6ce1caacbbd32ad
-    clientSecret: ff1a4853b17d854bfaebbdccb887e14d87215053
-    repo: FW-Blog
-    owner: AyaneYe
-    admin: ['AyaneYe']
+    clientID: 
+    clientSecret: 
+    repo: 
+    owner: 
+    admin: ['']
     distractionFreeMode: true
   utteranc:
-    repo: 
-    issue_term: 
-    lable: 
-    theme: 
+    repo: ayaneye/FW-Blog
+    issue_term: pathname
+    lable: utteranc
+    theme: preferred-color-scheme
 
 
 analytics:
