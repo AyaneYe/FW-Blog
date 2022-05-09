@@ -1,5 +1,5 @@
 ---
-title: Unity笔记--Awake和Start两个函数
+title: Unity笔记--1.Awake和Start两个函数
 date: 2022-5-6 23:38:00
 categories: 
 - 开发学习日志
