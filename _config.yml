@@ -57,6 +57,11 @@ prismjs:
   tab_replace: ''
 #优化
 all_minifier: true
+#搜索
+search:
+  path: search.json
+  field: post
+  content: true
 
 js_concator:
   enable: false
