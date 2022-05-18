@@ -53,7 +53,7 @@ comment:
     owner: 
     admin: ['']
     distractionFreeMode: true
-  utteranc:
+  utterances:
     repo: ayaneye/FW-Blog
     issue_term: pathname
     lable: utteranc
