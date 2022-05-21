@@ -1,37 +1,70 @@
+# Theme settings
 # 主题设置
-use_cdn: true # 是否使用 CDN 加速（cdn.jsdelivr.net）
+# use CDN to boost your site(CDN Providers:true(use jsdelivr)/cdnjs/jsdelivr/staticfile/bootcdn/bytedance/unpkg/false(won't use CDN))
+# 使用CDN加速前端载入(CDN提供商:true(使用默认的jsdelivr)/cdnjs/jsdelivr/staticfile/bootcdn/bytedance/unpkg/false(不使用CDN))
+cdn_provider: 'cdnjs'
 
+# 使用特定的MDUI库版本(默认1.0.2，您可以手动修改为其他版本)
+# Use a specific MIUI version(default:1.0.2, you can modify it to other versions manually)
+# 注意：不使用CDN时请将这项留空或者填写1.0.2，否则会出现错误
+# Note: Please leave this blank or fill in 1.0.2 when not using CDN, otherwise an error will occur
+mdui_version:  
+
+# Theme colors
+# Check out all the colors here: https://www.mdui.org/docs/color
 # 主题颜色
+# 颜色列表请看: https://www.mdui.org/docs/color
 color:
   primary: indigo
   accent: pink
 
+# GPDR Cookie alert(HTML Tag supported)
+# This will show a snackbar at the right bottom of the page
+# GPDR Cookie提示(支持HTML标签)
+# 效果是页面右下角显示一个Snackbar
 gdpr_cookie_alert:
   enable: false
   text: 此网站使用Cookie来改善您的体验。
 
+# Link to header picture
 header_picture_link: https://lishanweilai-1254333161.cos.ap-beijing.myqcloud.com/necry/header.webp
+# Link to favicon.ico
 favicon: https://lishanweilai-1254333161.cos.ap-beijing.myqcloud.com/necry/hua.webp
-excerpt_length: 250 #自动生成的摘要长度 建议文章中手动使用 <!--more--> 效果更佳  
+# Auto-generated excerpt length, <!-- more --> is supported
+excerpt_length: 250 # 自动生成的摘要长度，<!-- more -->也支持
 tag_page_count: true #Tag页是否计数
 
-# 搜索(还没做)
+
+# Search settings(depends on "hexo-generator-search")
+# Need to be configured in JSON format, the path is '/search.json'
+# Currently this setting is useless
+# 搜索设置(依赖 "hexo-generator-search")
+# 需配置为JSON格式，路径为'/search.json'
+# 目前这个设置项没什么用
 search:
   local: true
   path: /search.xml
 
-# 抽屉菜单的关于
+# 抽屉菜单的关于栏
 drawer_about:
   enable: true
+  # Link to avatar image
   avatar: https://lishanweilai-1254333161.cos.ap-beijing.myqcloud.com/necry/hua.webp
+  # Name
   name: AyaneYe
+  # Slogan
   slogan: Life blooms like a flower
+  # Link to background image
   background: https://lishanweilai-1254333161.cos.ap-beijing.myqcloud.com/necry/sidebar.webp
+  # Whether the background is dark-colored or not
   is_dark: true
 
-# 抽屉菜单
-# 格式: 名称: 链接 || 前缀(图标)
-# 图标到找 https://www.mdui.org/docs/material_icon
+# Drawer menu list (Nested lists are not supported)
+# Format: Link name: Link || Icon
+# Check out all the icons at https://www.mdui.org/docs/material_icon
+# 抽屉菜单列表（暂不支持嵌套列表）
+# 格式: 名称: 链接 || 图标
+# 图标到 https://www.mdui.org/docs/material_icon 找
 drawer:
   主页: / || &#xe88a;
   GitHub: https://github.com/AyaneYe || &#xe149;
@@ -39,13 +72,20 @@ drawer:
   赞助商们: /friends || &#xe7fb;
   关于: /about || &#xe88e;
 
+# Text which will inserted at the end of the article.
+# '%title%' refers to title link of current post.
+# '%link%' refers to permalink link of current post
 # 文章末尾插入的文段，%title%表示文章标题，%link%表示文章链接
 passage_end_tag:
   enabled: true
   text: '全文完'
 
+# Comment system settings
+# 评论系统
 comment:
-  use: 'utteranc'
+  use: 'utterances'
+  # gitalk configuration refers to https://github.com/gitalk/gitalk/
+  # Gitalk配置文档：https://github.com/gitalk/gitalk/
   gitalk:
     clientID: 
     clientSecret: 
@@ -53,30 +93,44 @@ comment:
     owner: 
     admin: ['']
     distractionFreeMode: true
+  # utterance configuration refers to https://utteranc.es/
+  # utteranc配置文档：https://utteranc.es/
   utterances:
     repo: ayaneye/FW-Blog
     issue_term: pathname
     lable: utteranc
     theme: preferred-color-scheme
 
-
+# 网页分析
 analytics:
+  # Google Analytics configuration refers to https://analytics.google.com/
+  # Google Analytics官网：https://analytics.google.com/
   google:
     enabled: false
     tracking_id: 
+  # Cloudflare Web Analytics configuration refers to https://developers.cloudflare.com/analytics/web-analytics
+  # Cloudflare Web Analytics文档：https://developers.cloudflare.com/analytics/web-analytics
   cloudflare:
     enabled: false
     token: 
 
 footer:
+  # When the site was launched
   since: 2021
-  copyrights: true
-  hexo: false
-  theme: true
-  text: 
-  contact:
+  # Show '© %SITE_NAME%' in footer
+  copyrights: true # 会在页脚显示 '© %SITE_NAME%'
+  # Show "Powered by Hexo" in the footer
+  hexo: false # 会在页脚显示 'Powered by Hexo'
+  # Show "Themed MDx" in footer
+  theme: true # 会在页脚显示 '由 MDx 主题装饰'（球球了开开吧）
+  # Text to show on the footer
+  text: # 会在页脚显示 '自定义的文字'
+  # Social media links
+  contact: # 会在页脚显示链接
     GitHub: https://github.com/AyaneYe
     Email: mailto:charlottestar@qq.com
     Twitter: https://twitter.com/AyaneYeee
-  miit_icp: 
-  moe_icp: 20211981
+  # Link to MIIT ICP
+  miit_icp: # 会在页脚显示备案号
+  # Link to MOE ICP
+  moe_icp: 20211981 # 会在页脚显示萌备
