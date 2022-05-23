@@ -1,6 +1,6 @@
 ---
 title: Unity笔记--5.Destroy的用法
-date: 2022-5-13 17:03:00
+date: 2022-5-14 17:03:00
 categories: 
 - 开发学习日志
 tags: 
