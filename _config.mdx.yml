@@ -24,9 +24,11 @@ color:
 # 效果是页面右下角显示一个Snackbar
 gdpr_cookie_alert:
   enable: false
-    # 提示文字
+  # 如需享受MDx的i18n功能，请将下面两个选项留空
+  # If you want to use MDx's i18n feature, please leave them blank
+  # 提示文字
   text: 此网站使用Cookie来改善您的体验。
-    # 按钮文字
+  # 按钮文字
   # Button text
   ack_btn: 了解
 
@@ -38,6 +40,8 @@ gdpr_cookie_alert:
 # 启用后MDx会每隔5秒检测一次网络连接，并在丢失网络连接时显示一条提示。
 online_check:
   enable: true
+  # 如需享受MDx的i18n功能，请将下面两个选项留空
+  # If you want to use MDx's i18n feature, please leave them blank
   # Offline alert text(optional)
   # 离线时提示的文字(可选)
   offlineText: 您似乎处于离线状态，某些功能无法使用，请检查您的网络连接。
@@ -46,29 +50,26 @@ online_check:
   onlineText: 网络连接已恢复！
   ack_btn: 了解
 
-
 # Link to header picture
 header_picture_link: https://lishanweilai-1254333161.cos.ap-beijing.myqcloud.com/necry/header.webp
 # Link to favicon.ico
 favicon: https://lishanweilai-1254333161.cos.ap-beijing.myqcloud.com/necry/hua.webp
 # Auto-generated excerpt length, <!-- more --> is supported
 excerpt_length: 250 # 自动生成的摘要长度，<!-- more -->也支持
-tag_page_count: true #Tag页是否计数
-
 
 # Search settings(depends on "hexo-generator-search")
 # Need to be configured in JSON format, the path is '/search.json'
-# Currently this setting is useless
 # 搜索设置(依赖 "hexo-generator-search")
 # 需配置为JSON格式，路径为'/search.json'
-# 目前这个设置项没什么用
 search:
   # Enable search
   # 是否启用搜索功能
-  local: true
+  enable: true
   # Search database path(default: './search.json')
   # 搜索数据库路径(默认为'/search.json')
-  path: /search.xml
+  path: /search.json
+  # 如需享受MDx的i18n功能，请将下面留空
+  # If you want to use MDx's i18n feature, please leave them blank
   # Search box placeholder text(optional)
   # 搜索框提示文字(可选)
   placeholder: 搜点什么...
